@@ -8,7 +8,7 @@ fi
 
 NAZWA_BAZY=$1
 HASLO=$2
-NAZWA_BAZY_DB="`${NAZWA_BAZY}`.`db`"
+NAZWA_BAZY_DB="\"${NAZWA_BAZY}.db\""
 
 # Tworzenie użytkownika i bazy danych w PostgreSQL
 sudo -u postgres psql <<EOF
