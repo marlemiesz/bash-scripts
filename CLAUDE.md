@@ -25,6 +25,13 @@ Dodaje ochronę hasłem (HTTP Basic Auth) do strony w nginx.
 sudo ./protect_nginx_site.sh <nazwa_strony> <login> <hasło>
 ```
 
+### create_app_user.sh
+Tworzy użytkownika `app` z dostępem sudo i ustawia hasło.
+
+```bash
+sudo ./create_app_user.sh
+```
+
 ## Wymagania
 
 - Linux (testowane na Debian/Ubuntu)
